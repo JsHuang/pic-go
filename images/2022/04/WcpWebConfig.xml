@@ -1,0 +1,365 @@
+<?xml version="1.0"  encoding="utf-8" standalone="yes" ?>
+<conf>
+	<!-- 界面展示 -->
+	<group describe="文字标记/通用配置" name="webshow">
+		<parameter name="config.sys.title">
+			<val>wcp知识分享平台</val>
+			<describe>系统标题</describe>
+		</parameter>
+		<parameter name="config.sys.foot">
+			<val>wcp知识分享平台</val>
+			<describe>系统页面最下方显示</describe>
+		</parameter>
+		<parameter name="config.sys.link.newwindow.target">
+			<val>_blank</val>
+			<describe>是否允许系统在新窗口打开页面_self（在本窗口打开页面）/_blank（在新窗口打开页面）</describe>
+		</parameter>
+		<parameter name="config.sys.link.docview.target">
+			<val>_blank</val>
+			<describe>视频预览时是否在新窗口打开预览页面auto(自动)/_blank(强制新窗口)</describe>
+		</parameter>
+		<parameter name="config.sys.type.collapse.level">
+			<val>2</val>
+			<describe>前台页面知识分类页面中，树形分类在第几级开始折叠,可选1/2/3</describe>
+		</parameter>
+	</group>
+	<group describe="首页显示" name="homepage">
+		<parameter name="config.show.maxtop.text">
+			<val>false</val>
+			<describe>是否显示首页大图上的文字</describe>
+		</parameter>
+		<parameter name="config.show.search.headbox">
+			<val>true</val>
+			<describe>是否显示顶部的搜索框</describe>
+		</parameter>
+		<parameter name="config.show.search.homepage">
+			<val>false</val>
+			<describe>是否显示首页中部的搜索框</describe>
+		</parameter>
+		<parameter name="config.show.home">
+			<val>true</val>
+			<describe>是否显示首页</describe>
+		</parameter>
+		<parameter name="config.show.hometype">
+			<val>true</val>
+			<describe>是否显示首页的分类组件</describe>
+		</parameter>
+		<parameter name="config.show.carousel.interval">
+			<val>5</val>
+			<describe>首页滚动大图的刷新时间，单位是秒</describe>
+		</parameter>
+		<parameter name="config.sys.hotdoc.show.num">
+			<val>5</val>
+			<describe>最热知识的显示数量</describe>
+		</parameter>
+		<parameter name="config.sys.newdoc.show.num">
+			<val>5</val>
+			<describe>最新知识的显示数量</describe>
+		</parameter>
+		<parameter name="config.sys.unreadmsg.show.num">
+			<val>5</val>
+			<describe>首页显示未读消息的数量</describe>
+		</parameter>
+		<parameter name="config.sys.hotdoc.query.limit">
+			<val>156</val>
+			<describe>最热知识显示的文档类型1文档知识5资源知识6网络资源,可选择多个如156</describe>
+		</parameter>
+		<parameter name="config.sys.newknow.query.limit">
+			<val>156</val>
+			<describe>最新知识显示的文档类型1文档知识5资源知识6网络资源,可选择多个如156</describe>
+		</parameter>
+		<parameter name="config.doc.content.maxsize">
+			<val>200000</val>
+			<describe>创建知识时允许的最大字符数(不要超过2147483647)</describe>
+		</parameter>
+	</group>
+	<group describe="知识" name="question">
+		<parameter name="config.show.uploadbutton.legacy">
+			<val>false</val>
+			<describe>是否在资源知识创建和修改页面展示传统上传按钮:true显示,false不显示</describe>
+		</parameter>
+		<parameter name="config.newcomments.show.num">
+			<val>5</val>
+			<describe>知识页面-显示最近多少条评论</describe>
+		</parameter>
+		<parameter name="config.show.webdownload">
+			<val>true</val>
+			<describe>是否启用网页下载功能</describe>
+		</parameter>
+		<parameter name="config.sys.tags.autocreate">
+			<val>false</val>
+			<describe>是否在用户没有选择标签是自动为知识创建标签</describe>
+		</parameter>
+		<parameter name="config.kindeditor.media.able">
+			<val>true</val>
+			<describe>是否在文档知识超文本编辑器中启用mp4、mp3上传播放功能 (部分移动端浏览器和safari浏览器不支持)
+			</describe>
+		</parameter>
+		<parameter name="config.show.img.lazyload">
+			<val>false</val>
+			<describe>是否允许延迟加载图片[true|false]
+			</describe>
+		</parameter>
+		<parameter name="config.able.booktype">
+			<val>true</val>
+			<describe>是否可以关注分类[true|false]
+			</describe>
+		</parameter>
+	</group>
+	<group describe="栏目" name="webshow">
+		<parameter name="config.show.glory">
+			<val>true</val>
+			<describe>是否显示荣誉</describe>
+		</parameter>
+	</group>
+	<group describe="知识访问记录" name="businessLogic">
+		<parameter name="config.logic.knowvisite.record.able">
+			<val>false</val>
+			<describe>是否允许数据库写入知识访问记录</describe>
+		</parameter>
+		<parameter name="config.logic.knowvisite.record.maxnum">
+			<val>50</val>
+			<describe>每个知识的访问记录最多记录多少条</describe>
+		</parameter>
+	</group>
+	<group describe="用户权限，用户信息修改 " name="user">
+		<parameter name="config.sys.docedit.superuser">
+			<val>true</val>
+			<describe>超级用户是否可以编辑所有知识</describe>
+		</parameter>
+		<parameter name="config.useredit.showOrg">
+			<val>false</val>
+			<describe>前台编辑当前用户信息时，是否可以选择组织机构</describe>
+		</parameter>
+		<parameter name="config.useredit.showName">
+			<val>false</val>
+			<describe>前台编辑当前用户信息时，是否可以修改用户名</describe>
+		</parameter>
+	</group>
+	<group describe="登录,注册" name="regist/login">
+		<parameter name="config.sys.firstlogin.message">
+			<val>欢迎使用本系统，如果您的密码是系统自动生成的请及时重置密码!</val>
+			<describe>用户首次正常登录时的提示信息</describe>
+		</parameter>
+		<parameter name="config.sys.firstBind.message">
+			<val>欢迎使用本系统!</val>
+			<describe>用户首次通过外部账号绑定到系统登录后收到的提示信息</describe>
+		</parameter>
+		<parameter name="config.url.free.path.prefix">
+			<val>Pub</val>
+			<describe>是否允许用户不登录就访问知识页面，可选项：NONEPAGE(不允许访问)Pub(允许访问)</describe>
+		</parameter>
+		<parameter name="config.show.local.regist.able">
+			<val>false</val>
+			<describe>是否允许本地注册新用户</describe>
+		</parameter>
+		<parameter name="config.registed.audit">
+			<val>false</val>
+			<describe>用户前台注册后是否为待审核状态,true为需要审核,false直接为可用状态</describe>
+		</parameter>
+		<parameter name="config.sys.verifycode.able">
+			<val>true</val>
+			<describe>是否启用用户登录验证码</describe>
+		</parameter>
+		<parameter name="config.sys.verifycode.checknum">
+			<val>3</val>
+			<describe>用户免验证码登录失败次数，超过该数量就启用验证码，为0时总是启用验证码，外部免登绑定账户时直接启用验证码
+			</describe>
+		</parameter>
+		<parameter name="config.sys.perfect.userinfo.able">
+			<val>true</val>
+			<describe>用户登录后是否必须先完善个人信息,true时，如果用户没有完善个人信息直接跳到个人信息编辑页面(isCompleteUserInfo(LoginUser
+				currentUser)方法判断用户信息是否完善)
+			</describe>
+		</parameter>
+		<parameter name="config.regist.showOrg">
+			<val>true</val>
+			<describe>注册用户时是否要求选择组织机构</describe>
+		</parameter>
+		<parameter name="config.login.default.url">
+			<val>default</val>
+			<describe>默认的登陆页面,可选项:default[默认内部登陆窗口],/ldap/PubLogin.html[ldap登陆窗口]
+			</describe>
+		</parameter>
+	</group>
+	<group describe="密码" name="password">
+		<parameter name="config.password.provider.type">
+			<val>SIMPLE</val>
+			<describe>用户密碼的实现类型[SIMPLE:简单类型(4.3.1之前得版本使用),SAFE:安全类型(4.3.1以及之后初装版本可以使用)]
+			</describe>
+		</parameter>
+		<parameter name="config.default.password">
+			<val>111111</val>
+			<describe>用户创建时的默认密码</describe>
+		</parameter>
+		<parameter name="config.sys.enforce.password.update">
+			<val>false</val>
+			<describe>是否强制当前用户修改默认密码(true强制修改),在当前用户密码和默认密码一致时（没有修改过默认密码）。
+			</describe>
+		</parameter>
+		<parameter name="config.sys.password.update.regex">
+			<val>(.*)</val>
+			<describe>当前用户前台修改密码时,密码验证-正则表达式,如:密码规则为字母加数字至少
+				6位:^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,32}$,如:密码不包含换行符:(.*)
+			</describe>
+		</parameter>
+		<parameter name="config.sys.password.update.tip">
+			<val>密码不能包含换行符</val>
+			<describe>当前用户前台修改密码时,密码验证-正则表达式验证失败提示信息</describe>
+		</parameter>
+	</group>
+	<!--文件上传 -->
+	<group describe="文件" name="document.properties">
+		<parameter name="config.doc.dir">
+			<val>D:\wcpServer\resource\file</val>
+			<describe>附件文件夹地址，
+				1.使用相对路径
+				[WEBROOT]表示部署路径的根目录比如：(WEBROOT/files=E:\server\wcp-tomcat-6.0.16\webapps\wcp\files)
+				2.或者使用绝对路径如：[D:\wcp3server\resource\file]
+			</describe>
+		</parameter>
+		<parameter name="config.doc.file.import">
+			<val>D:\wcptemp\import</val>
+			<describe>本地知识导入目录</describe>
+		</parameter>
+		<parameter name="config.doc.file.export">
+			<val>D:\wcptemp\export</val>
+			<describe>本地知识导出目录</describe>
+		</parameter>
+		<parameter name="config.doc.download.url">
+			<val>actionImg/Publoadfile.do?id=</val>
+		</parameter>
+		<parameter name="config.doc.photo.url">
+			<val>actionImg/Publoadphoto.do?id=</val>
+		</parameter>
+		<parameter name="config.doc.img.url">
+			<val>actionImg/Publoadimg.do?id=</val>
+		</parameter>
+		<parameter name="config.doc.hot.weight">
+			<val>10</val>
+			<describe>热度冷却系数 (如果设置为 19,表示从 24 小时 内从 100的热度降低到1的热度,数值越大冷却越快)
+			</describe>
+		</parameter>
+		<!-- 附件 start -->
+		<parameter name="config.doc.upload.types">
+			<val>png,jpg,jpeg,zip,doc,docx,xls,xlsx,pdf,ppt,pptx,web,rar,txt,flv,mp3,mp4,dcr
+			</val>
+			<describe>上传文件允许的后缀名、文件类型</describe>
+		</parameter>
+		<parameter name="config.doc.media.upload.types">
+			<val>mp4,mp3</val>
+			<describe>上传多媒体允许的后缀名、文件类型</describe>
+		</parameter>
+		<parameter name="config.doc.upload.length.max">
+			<val>1073741824</val>
+			<describe>上传文件允许文件大小,单位是字节</describe>
+		</parameter>
+		<!--附件 end -->
+		<!--图片 start -->
+		<parameter name="config.doc.img.upload.types">
+			<val>png,jpg,jpeg,gif</val>
+			<describe>上传图片允许的后缀名、文件类型</describe>
+		</parameter>
+		<parameter name="config.doc.img.upload.length.max">
+			<val>10485760</val>
+			<describe>上传图片允许文件大小,单位是字节</describe>
+		</parameter>
+		<!--图片 end -->
+		<parameter name="config.doc.none.img.path">
+			<val>text/img/none.png</val>
+			<describe>如果图片文件不存在时，默认的图片</describe>
+		</parameter>
+		<parameter name="config.doc.noright.img.path">
+			<val>text/img/noRight.png</val>
+			<describe>如果无操作权限，默认的图片</describe>
+		</parameter>
+		<parameter name="config.doc.none.photo.path">
+			<val>text/img/photo.png</val>
+			<describe>如果头像文件不存在时，默认的图片</describe>
+		</parameter>
+		<parameter name="config.doc.downloadfile.safecode.valid">
+			<val>false</val>
+			<describe>在下载附件时是否验证安全码(防止在url中只填写附件id下载附件)，true验证安全码，false不验证安全码
+			</describe>
+		</parameter>
+		<parameter name="config.logic.remove.img.able">
+			<val>false</val>
+			<describe>是否允许删除图片附件</describe>
+		</parameter>
+		<parameter name="config.limit.cut.png.length">
+			<val>50</val>
+			<describe>大小（单位KB）超过该设置的PNG图片将被裁切(其他格式不做限制)否则不做处理，裁切后失去透明背景
+			</describe>
+		</parameter>
+	</group>
+	<!-- 索引文件，全文检索 -->
+	<group describe="全文检索" name="indexConfig.properties">
+		<parameter name="config.file.luncene_index_dir">
+			<val>D:\wcpServer\resource\index</val>
+			<describe>索引文件夹地址，
+				1.使用相对路径
+				[WEBROOT]表示部署路径的根目录比如：(WEBROOT/indexfiles=E:\server\wcp-tomcat-6.0.16\webapps\wcp\indexfiles
+				)
+				2.或者使用绝对路径如：[D:\wcp3server\resource\index]
+			</describe>
+		</parameter>
+		<parameter name="config.file.luncene_max_query_num">
+			<val>300</val>
+			<describe>全文检索多大的检索数量</describe>
+		</parameter>
+		<parameter name="config.file.lucene_highLight_maxnum">
+			<val>100</val>
+			<describe>检索结果中用于缩略描述展示的字符长度</describe>
+		</parameter>
+		<parameter name="config.file.lucene_highLight_simple_s">
+			<val>&lt;font color=red&gt;</val>
+			<describe>高亮样式开始</describe>
+		</parameter>
+		<parameter name="config.file.lucene_highLight_simple_e">
+			<val>&lt;/font&gt;</val>
+			<describe>高亮样式结束</describe>
+		</parameter>
+		<parameter name="config.search.lucene.tag.and">
+			<val>false</val>
+			<describe>标签检索是否包含所有查询标签才进行展示</describe>
+		</parameter>
+		<parameter name="config.show.search.docimg.num">
+			<val>5</val>
+			<describe>检索图片时每个知识最多展示几个图片</describe>
+		</parameter>
+		<parameter name="config.search.word.char.wipe">
+			<val>\+!():^[]&quot;{}~*?|&amp;;/=&apos;</val>
+			<demo>如:\+-!():^[]&quot;{}~*?|&amp;;/=&apos;</demo>
+			<describe>全文检索时需要过滤的特殊字符（&lt;小于号&gt;大于号&amp;和&apos;单引号&quot;双引号 ）
+			</describe>
+		</parameter>
+		<parameter name="config.search.autocomplete.able">
+			<val>false</val>
+			<describe>是否启用搜索栏自动补全</describe>
+		</parameter>
+		<parameter name="config.sys.webhotcase.show.num">
+			<val>5</val>
+			<describe>最热检索词的显示数量</describe>
+		</parameter>
+		<parameter name="config.sys.webhotcase.show.tops">
+			<val>NONE</val>
+			<describe>置顶显示的最热检索词,多个检索词间逗号分隔 (无的情况下填写NONE)</describe>
+		</parameter>
+		<parameter name="config.search.img.noimg.isshow">
+			<val>true</val>
+			<describe>全文检索的图片检索是否显示无图知识</describe>
+		</parameter>
+		<parameter name="config.search.sensitive.type">
+			<val>low</val>
+			<describe>检索灵敏度low宽泛|high精确</describe>
+		</parameter>
+	</group>
+	<!-- 系统缓存配置 -->
+	<group describe="性能配置" name="cache.properties">
+		<parameter name="config.wcp.popdocs.fetchnum">
+			<val>2000</val>
+			<describe>带权限查询知识时，检索范围配置，最近更新过的前多少条知识，建议500~5000，越大性能越差但是结果范围越大，在带权限的知识列表查询慢时可以缩短该数值
+			</describe>
+		</parameter>
+	</group>
+</conf>
