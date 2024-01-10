@@ -1,0 +1,26 @@
+{
+  "picBed": {
+    "current": "smms",
+    "uploader": "smms",
+    "smms": {
+      "token": ""
+    }
+  },
+  "settings": {
+    "shortKey": {
+      "picgo:upload": {
+        "enable": true,
+        "key": "CommandOrControl+Shift+P",
+        "name": "upload",
+        "label": "QUICK_UPLOAD"
+      }
+    },
+    "isListeningClipboard": false,
+    "showUpdateTip": true,
+    "miniWindowPosition": [
+      1451,
+      729
+    ]
+  },
+  "needReload": false
+}
