@@ -1,0 +1,103 @@
+{
+  "picBed": {
+    "current": "smms",
+    "uploader": "smms",
+    "smms": {
+      "token": ""
+    },
+    "list": [
+      {
+        "type": "tcyun",
+        "name": "腾讯云COS",
+        "visible": false
+      },
+      {
+        "type": "aliyun",
+        "name": "阿里云OSS",
+        "visible": false
+      },
+      {
+        "type": "smms",
+        "name": "SM.MS",
+        "visible": false
+      },
+      {
+        "type": "github",
+        "name": "GitHub",
+        "visible": true
+      },
+      {
+        "type": "qiniu",
+        "name": "七牛云",
+        "visible": false
+      },
+      {
+        "type": "imgur",
+        "name": "Imgur",
+        "visible": false
+      },
+      {
+        "type": "upyun",
+        "name": "又拍云",
+        "visible": false
+      },
+      {
+        "type": "webdavplist",
+        "name": "WebDAV",
+        "visible": true
+      },
+      {
+        "type": "local",
+        "name": "本地上传",
+        "visible": true
+      },
+      {
+        "type": "sftpplist",
+        "name": "内置SFTP",
+        "visible": true
+      },
+      {
+        "type": "telegraphplist",
+        "name": "Telegraph",
+        "visible": false
+      },
+      {
+        "type": "piclist",
+        "name": "PicList",
+        "visible": true
+      }
+    ],
+    "proxy": "http://127.0.0.1:7890"
+  },
+  "settings": {
+    "shortKey": {
+      "picgo:upload": {
+        "enable": true,
+        "key": "CommandOrControl+Shift+P",
+        "name": "upload",
+        "label": "QUICK_UPLOAD"
+      }
+    },
+    "isListeningClipboard": false,
+    "showUpdateTip": true,
+    "miniWindowPosition": [
+      1451,
+      729
+    ],
+    "deleteCloudFile": true,
+    "proxy": "",
+    "registry": "",
+    "sync": {
+      "type": "github",
+      "username": "jshuang",
+      "repo": "pic-go",
+      "branch": "main",
+      "token": "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",
+      "endpoint": "",
+      "proxy": "http://127.0.0.1:7890",
+      "interval": 60
+    },
+    "autoStart": true
+  },
+  "needReload": false
+}
